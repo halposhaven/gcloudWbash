@@ -6,4 +6,4 @@ RUN apt-get install -y bash
 
 ADD sqlbackup.sh $HOME
 
-ENTRYPOINT ["/bin/bash -c ~/sqlbackup.sh"]
+ENTRYPOINT ["/bin/bash -c /sqlbackup.sh"]
