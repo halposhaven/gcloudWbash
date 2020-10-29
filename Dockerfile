@@ -6,5 +6,5 @@ RUN apt-get install -y bash
 
 ADD sqlbackup.sh $HOME
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
 
