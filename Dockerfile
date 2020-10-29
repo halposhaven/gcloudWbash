@@ -6,8 +6,4 @@ RUN apt-get install -y bash
 
 ADD sqlbackup.sh $HOME
 
-RUN echo 'ping localhost &' > /bootstrap.sh
-RUN echo 'sleep infinity' >> /bootstrap.sh
-RUN chmod +x /bootstrap.sh
-
-CMD /bootstrap.sh
+ENTRYPOINT ["/bin/bash -c ~/sqlbackup.sh"]
